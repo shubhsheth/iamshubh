@@ -26,9 +26,9 @@ jobs:
     - name: ssh key passphrase
       uses: ./
       with:
-        host: ${{ secrets.IAMSHUBHHOST }}
-        username: ${{ secrets.IAMSHUBHUSERNAME }}
-        port: ${{ secrets.IAMSHUBHPORT }}
-        passphrase: ${{ secrets.IAMSHUBHPASSPHRASE }}
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        port: ${{ secrets.PORT }}
+        passphrase: ${{ secrets.PASSPHRASE }}
         script: |
             git pull origin master
