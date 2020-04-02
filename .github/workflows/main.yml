@@ -31,5 +31,4 @@ jobs:
         port: ${{ secrets.IAMSHUBHPORT }}
         passphrase: ${{ secrets.IAMSHUBHPASSPHRASE }}
         script: |
-          whoami
-          ls -al
+            git pull origin master
