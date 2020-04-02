@@ -14,21 +14,14 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
+    name: Build
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    #- uses: actions/checkout@v2
-
-    # Runs a single command using the runners shell
-    - name: ssh key passphrase
-      uses: ./
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSPHRASE }}
         port: ${{ secrets.PORT }}
-        passphrase: ${{ secrets.PASSPHRASE }}
-        script: |
-            git pull origin master
+        script: cd public_html && git pull origin master
