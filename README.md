@@ -2,4 +2,4 @@
 Personal Website
 
 ## Workflow
-- Uses Git Action to Deploy via SSH
+- Uses Git Actions to Deploy via SSH
