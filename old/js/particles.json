@@ -1,0 +1,22 @@
+{
+    "particles":{
+        "number":{
+            "value": 270
+        },
+        "size": {
+            "value": 5,
+            "random": true
+        },
+        "opacity":{
+            "value": 0.6
+        },
+        "interactivity":{
+            "detect_on": "canvas",
+            "events":{
+                "onhover":{
+                    "enable": true
+                }
+            }
+        }
+    }
+}
