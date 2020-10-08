@@ -70,7 +70,7 @@ export const Hero = () => {
             }
         });
 
-    }, []);
+    });
 
     return (
         <section className="hero">
@@ -165,21 +165,25 @@ export const Hero = () => {
                     <Row>
                         {/* Carousel Button 01 */}
                         <Col className="carousel_control carousel_control-active">
+                            { /* eslint-disable-next-line */}
                             <a href="#" className="btn-carousel_control"></a>
                             <h4 className="carousel_control_button_name">Intro</h4>
                         </Col>
                         {/* Carousel Button 02 */}
-                        <Col className="carousel_control">
+                        <Col className="carousel_control">                         
+                            { /* eslint-disable-next-line */}
                             <a href="#" className="btn-carousel_control"></a>
                             <h4 className="carousel_control_button_name">Connect</h4>
                         </Col>
                         {/* Carousel Button 03 */}
-                        <Col className="carousel_control">
+                        <Col className="carousel_control">                  
+                            { /* eslint-disable-next-line */}
                             <a href="#" className="btn-carousel_control"></a>
                             <h4 className="carousel_control_button_name">Game</h4>
                         </Col>
                         {/* Carousel Button 04 */}
-                        <Col className="carousel_control">
+                        <Col className="carousel_control">                  
+                            { /* eslint-disable-next-line */}
                             <a href="#" className="btn-carousel_control"></a>
                             <h4 className="carousel_control_button_name">Reff.</h4>
                         </Col>
