@@ -1,0 +1,42 @@
+#home-contact{
+    padding: 70px 0;
+    background: -moz-linear-gradient(left, #b6e2ef 0%, #04baed 100%);
+    background: -webkit-linear-gradient(left, #b6e2ef 0%,#04baed 100%);
+    text-align: center;
+}
+#home-contact h1{
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+.email-me{
+    display: inline-block;
+    box-shadow: none;
+    outline: none;
+    border: 2px solid #fff;
+    background: none;
+    padding: 7px 25px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+.email-me:hover{
+    background: #fff;
+    color: #55ccee;
+}
+.contact_social .btn-social{
+    display: inline-block;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    background: #363636;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #363636;
+}
+.btn-social img{
+    height: 48px;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
