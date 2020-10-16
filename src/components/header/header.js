@@ -1,20 +1,29 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, {useState} from "react"
+import React, { useState, useEffect } from "react"
 
+import './header.css'
 
 const Header = ({ siteTitle }) => {
-	
-	const [isToggled, setToggled] = useState(false);
-	const toggleNav = () => setToggled(!isToggled);
 
-	return (
-		<>
+    const [isToggled, setToggled] = useState(false);
+    const toggleNav = () => setToggled(!isToggled);
+
+    useEffect(() => {
+        document.querySelectorAll('nav ul li a').forEach((el, i) => {
+            el.addEventListener('click', () => {
+                setToggled(false);
+            });
+        });
+    });
+
+    return (
+        <>
             <header className="header">
                 <div className="header-inner">
                     <Link to="/"><h1>{siteTitle}</h1></Link>
-                    <div 
-                        className={isToggled ? 'active icon' : 'icon'} 
+                    <div
+                        className={isToggled ? 'active icon' : 'icon'}
                         onClick={toggleNav} >
                         <div className="hamburger"></div>
                     </div>
@@ -28,16 +37,16 @@ const Header = ({ siteTitle }) => {
                     <li><Link to="/#home-contact">Contact</Link></li>
                 </ul>
             </nav>
-		</>
-	)
-} 
+        </>
+    )
+}
 
 Header.propTypes = {
-	siteTitle: PropTypes.string,
+    siteTitle: PropTypes.string,
 }
 
 Header.defaultProps = {
-	siteTitle: ``,
+    siteTitle: ``,
 }
 
 export default Header
