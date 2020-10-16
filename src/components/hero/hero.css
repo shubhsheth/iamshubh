@@ -117,7 +117,7 @@
     opacity: 0.6;
 }
 .carousel_slide-1{
-    background: url('./images/new york.jpg');
+    background: url('/images/new york.jpg');
     background-size: cover;
     background-position: center;
 }
