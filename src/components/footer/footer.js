@@ -5,9 +5,6 @@ import { Container, Image } from 'react-bootstrap'
 
 import './footer.css'
 
-import inIcon from '../../images/icons/in.png';
-import cpIcon from '../../images/icons/cp.png';
-import ghIcon from '../../images/icons/gh.png';
 
 const Footer = () => {
     return (
@@ -23,17 +20,17 @@ const Footer = () => {
                     <ul className="footer-nav-icons">
                         <li>
                             <a href="https://www.linkedin.com/in/sheth-shubh/" target="_blank" rel="noopener noreferrer nofollow">
-                                <Image src={inIcon} />
+                                <Image src={'/icons/in.png'} />
                             </a>
                         </li>
                         <li>
                             <a href="https://codepen.io/shubhsheth" target="_blank" rel="noopener noreferrer nofollow">
-                                <Image src={cpIcon} />
+                                <Image src={'/icons/cp.png'} />
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/shubhsheth/" target="_blank" rel="noopener noreferrer nofollow">
-                                <Image src={ghIcon} />
+                                <Image src={'/icons/gh.png'} />
                             </a>
                         </li>
                     </ul>
