@@ -26,7 +26,7 @@
 	align-items: flex-end;
 }
 .abt_img {
-	background: url('/images/me-v2.png');
+	background: url('../../images/me-v2.png');
 	background-size: contain;
 	background-position: bottom;
 	background-repeat: no-repeat;
@@ -54,7 +54,7 @@
 	height: 200px;
 	position: absolute;
 	border-radius: 50%;
-	background: url('/images/background.jpg');
+	background: url('../../images/background.jpg');
 	border: 5px solid #fff;
 	top: 20%;
 	left: 50%;
@@ -91,7 +91,7 @@
         border-radius: 50%;
         border: 3px solid #fff;
         padding: 0;
-        background: url('/images/me2.jpg');
+        background: url('../../images/me2.jpg');
         background-size: contain;
         background-position: center;
         line-height: 1;

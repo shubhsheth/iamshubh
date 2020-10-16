@@ -4,6 +4,12 @@ import { Container, Row, Col, Image } from 'react-bootstrap'
 
 import "./about.css"
 
+
+import aboutText from '../../images/about.png';
+import regexIcon from '../../images/icons/regex.png';
+import uhIcon from '../../images/icons/uh.png';
+import cougarIcon from '../../images/icons/cougar.png';
+
 const About = () => {
 
     useEffect(() => {
@@ -28,10 +34,10 @@ const About = () => {
     return (
         <section className="home-about">
             <div className="parallax_about parallax_about-two">
-                <Image src={'/images/about.png'} className="img_about" alt="About" />
+                <Image src={aboutText} className="img_about" alt="About" />
             </div>
             <div className="parallax_about parallax_about-one">
-                <Image src={'/images/about.png'} className="img_about" alt="About" />
+                <Image src={aboutText} className="img_about" alt="About" />
             </div>
             <Container>
                 <Row>
@@ -43,15 +49,15 @@ const About = () => {
                             <h1 className="abt_info_name">Shubh Sheth</h1>
                             <div className="badges">
                                 <div className="badge">
-                                    <Image src={'/icons/regex.png'} alt="Regex SEO" />
+                                    <Image src={regexIcon} alt="Regex SEO" />
                                     Web Developer
                                 </div>
                                 <div className="badge">
-                                    <Image src={'/icons/uh.png'} alt="University of Houston" />
+                                    <Image src={uhIcon} alt="University of Houston" />
                                     Com-Sci Student
                                 </div>
                                 <div className="badge">
-                                    <Image src={'/icons/cougar.png'} alt="CougarCS" />
+                                    <Image src={cougarIcon} alt="CougarCS" />
                                     Webmaster
                                 </div>
                             </div>
