@@ -5,7 +5,7 @@ category: "Web Development"
 tags:
     - "CSS"
     - "Web Development"
-date: "2019-08-11T20:00:00.000Z"
+date: "2019-10-24T20:00:00.000Z"
 path: "/blog/ios-icons-with-only-one-div-tag"
 image: "/images/posts/ios-icons-with-only-one-div-tag/featured.jpg"
 draft: false

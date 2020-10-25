@@ -52,8 +52,8 @@ const Blog = () => {
                                 <img src={item.node.frontmatter.image} alt={item.node.frontmatter.title} />
                                 <div className="blog-item-content">
                                     { (item.node.frontmatter.source === "external") ? 
-                                        <div class="blog-item-flags"> 
-                                            <div class="blog-item-flag flag-external">External</div>
+                                        <div className="blog-item-flags"> 
+                                            <div className="blog-item-flag flag-external">External</div>
                                         </div>
                                     : ''}
                                     <h2>{item.node.frontmatter.title}</h2>
