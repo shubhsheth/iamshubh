@@ -14,15 +14,6 @@ module.exports = {
       options: {
         path: `${__dirname}/content/posts`,
         name: `posts`,
-        plugins: [
-          {
-            resolve: `gatsby-remark-highlight-code`,
-            options: {
-              terminal: 'carbon',
-              theme: 'blackboard'
-            }
-          },
-        ],
       },
     },
     {
@@ -55,7 +46,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `/icons/favicon.png`, // This path is relative to the root of the site.
+        icon: `public/favicon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

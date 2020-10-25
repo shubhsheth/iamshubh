@@ -7,7 +7,6 @@ import './header.css'
 const Header = ({ siteTitle }) => {
 
     const [isToggled, setToggled] = useState(false);
-    const toggleNav = () => setToggled(!isToggled);
 
     useEffect(() => {
         document.querySelectorAll('nav ul li a').forEach((el, i) => {
@@ -22,11 +21,11 @@ const Header = ({ siteTitle }) => {
             <header className="header">
                 <div className="header-inner">
                     <Link to="/"><h1>{siteTitle}</h1></Link>
-                    <div
+                    <a href="javascript:void(0)"
                         className={isToggled ? 'active icon' : 'icon'}
-                        onClick={toggleNav} >
+                        onClick={() => setToggled(!isToggled)} >
                         <div className="hamburger"></div>
-                    </div>
+                    </a>
                 </div>
             </header>
             <nav className={!isToggled ? 'close' : ''}>

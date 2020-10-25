@@ -33,16 +33,16 @@ const Template = ({ data }) => {
                     <div dangerouslySetInnerHTML={{ __html: post.html }} />
                     <div className="footer">
                         <div className="opensource">
-                            This blog is <a href="#">open-source on Github</a>.
+                            This blog is <a href="https://github.com/shubhsheth/iamshubh">open-source on Github</a>.
                         </div>
                         <div className="tags">
-                            <label>Tags:</label>
+                            <div className="label">Tags:</div>
                             {post.frontmatter.tags.map((item, i) =>
                                 <span key={i}>{item}</span>
                             )}
                         </div>
                         <div className="author">
-                            <img src="/images/me2.jpg" className="avatar" />
+                            <img src="/images/me2.jpg" className="avatar" alt="Shubh Sheth" />
                             <div className="description">
                                 <div className="name">Shubh Sheth</div>
                                 <div className="text">MDX lets you write JSX embedded inside markdown, perfect for technical blogs. MDX works with Gatsby through</div>

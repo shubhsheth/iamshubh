@@ -49,9 +49,9 @@ const Blog = () => {
                     <div className="blog-grid">
                         {data.allMarkdownRemark.edges.map((item, i) =>
                             <Link key={i} to={item.node.frontmatter.path} className="blog-item" >
-                                <img src={item.node.frontmatter.image} />
+                                <img src={item.node.frontmatter.image} alt={item.node.frontmatter.title} />
                                 <div className="blog-item-content">
-                                    { (item.node.frontmatter.source == "external") ? 
+                                    { (item.node.frontmatter.source === "external") ? 
                                         <div class="blog-item-flags"> 
                                             <div class="blog-item-flag flag-external">External</div>
                                         </div>
@@ -74,7 +74,6 @@ const Blog = () => {
                     </div>
                 </Container>
             </section>
-            {console.log(data)}
         </Layout>
     )
 }
