@@ -48,7 +48,9 @@ const Blog = () => {
                 <Container>
                     <div className="blog-grid">
                         {data.allMarkdownRemark.edges.map((item, i) =>
-                            <Link key={i} to={item.node.frontmatter.path} className="blog-item" >
+                            <Link key={i} to={item.node.frontmatter.path} className="blog-item" 
+                                target={ (item.node.frontmatter.source === "external") ? "_blank" : "self" } >
+                                    
                                 <img src={item.node.frontmatter.image} alt={item.node.frontmatter.title} />
                                 <div className="blog-item-content">
                                     { (item.node.frontmatter.source === "external") ? 

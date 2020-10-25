@@ -94,8 +94,9 @@ article .author .text {
     font-size: 16px;
 }
 
-
-
+article pre .carbon {
+    display: none;
+}
 
 
 

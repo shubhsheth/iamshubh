@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 
 import { Image, Container } from "react-bootstrap";
 
@@ -45,7 +45,7 @@ const Template = ({ data }) => {
                             <img src="/images/me2.jpg" className="avatar" alt="Shubh Sheth" />
                             <div className="description">
                                 <div className="name">Shubh Sheth</div>
-                                <div className="text">MDX lets you write JSX embedded inside markdown, perfect for technical blogs. MDX works with Gatsby through</div>
+                                <div className="text">Web Developer @ Regex SEO. CS Student @ UH. I blog about web development, design, and <Link to="/blog">more topics</Link>.</div>
                             </div>
                         </div>
                     </div>

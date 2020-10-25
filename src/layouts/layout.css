@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 
+
+:root {
+	--deckgo-highlight-code-carbon-box-shadow: none;
+	--deckgo-highlight-code-font-size: 16px;
+	--deckgo-highlight-code-carbon-header-padding: 0;
+	--deckgo-highlight-code-carbon-toolbar-display: none;
+	--deckgo-highlight-code-margin: 16px 0;
+}
+
 html {
 	scroll-behavior: smooth;
 }
