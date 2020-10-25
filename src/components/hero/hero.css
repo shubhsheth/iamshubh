@@ -10,6 +10,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 500ms ease-out;
+    margin: 0;
 }
 .carousel_outer {
     padding: 0px;
@@ -52,7 +53,7 @@
 }
 
 .carousel_control_button_name {
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0;
 }
 
 .carousel_slide-1 .slide_content {
@@ -92,6 +93,7 @@
     transform: translate(0);
     -webkit-transform: translate(0);
     -ms-transform: translate(0);
+    margin: 0;
     /* transform-origin: center; */
 }
 .slide_content{

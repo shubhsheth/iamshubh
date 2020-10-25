@@ -47,29 +47,32 @@ const Hero = () => {
         currImage = imageIndex;
     }
 
+    const rotateHandler = (i) => {
+        rotateCarousel(i);
+        document.querySelector('.carousel_control-active').classList.remove('carousel_control-active');
+        document.querySelectorAll('.carousel_control')[i].classList.add('carousel_control-active');
+    }
+
 
     useEffect(() => {
-        setupCarousel();
 
-        document.querySelectorAll('.carousel_control').forEach((el, i) => {
-            el.addEventListener('click', () => {
-                rotateCarousel(i);
-                document.querySelector('.carousel_control-active').classList.remove('carousel_control-active');
-                document.querySelectorAll('.carousel_control')[i].classList.add('carousel_control-active');
-            });
-        });
-
-        document.addEventListener('scroll', () => {
-            //get scroll value 
-            let height = window.scrollY;
-
-            // parallax
-            let inner = document.querySelector('.carousel_slide-1').clientHeight;
-            if (height < inner) {
-                let translate3 = `translateY(${height / 10}px)`;
-                document.querySelector('.svg-wrapper').style.transform = translate3;
-            }
-        });
+        if (document.querySelector('.carousel')) {
+            setupCarousel();
+        }
+    
+        if (document.querySelector('.carousel_slide-1')) {
+            document.addEventListener('scroll', () => {
+                //get scroll value 
+                let height = window.scrollY;
+    
+                // parallax
+                let inner = document.querySelector('.carousel_slide-1').clientHeight;
+                if (height < inner) {
+                    let translate3 = `translateY(${height / 10}px)`;
+                    document.querySelector('.svg-wrapper').style.transform = translate3;
+                }
+            }); 
+        }
 
     });
 
@@ -165,25 +168,25 @@ const Hero = () => {
                 <Container>
                     <Row>
                         {/* Carousel Button 01 */}
-                        <Col className="carousel_control carousel_control-active">
+                        <Col className="carousel_control carousel_control-active" onClick={() => {rotateHandler(0)}}>
                             { /* eslint-disable-next-line */}
                             <a href="#" className="btn-carousel_control"></a>
                             <h4 className="carousel_control_button_name">Intro</h4>
                         </Col>
                         {/* Carousel Button 02 */}
-                        <Col className="carousel_control">
+                        <Col className="carousel_control" onClick={() => {rotateHandler(1)}}>
                             { /* eslint-disable-next-line */}
                             <a href="#" className="btn-carousel_control"></a>
                             <h4 className="carousel_control_button_name">Connect</h4>
                         </Col>
                         {/* Carousel Button 03 */}
-                        <Col className="carousel_control">
+                        <Col className="carousel_control" onClick={() => {rotateHandler(2)}}>
                             { /* eslint-disable-next-line */}
                             <a href="#" className="btn-carousel_control"></a>
                             <h4 className="carousel_control_button_name">Game</h4>
                         </Col>
                         {/* Carousel Button 04 */}
-                        <Col className="carousel_control">
+                        <Col className="carousel_control" onClick={() => {rotateHandler(3)}}>
                             { /* eslint-disable-next-line */}
                             <a href="#" className="btn-carousel_control"></a>
                             <h4 className="carousel_control_button_name">Reff.</h4>

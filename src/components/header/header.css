@@ -94,6 +94,7 @@ nav{
     box-sizing: border-box;
     transition: all .5s ease;
     left: 0;
+    top: 0;
     min-width: 300px;
 }
 nav.close{

@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap-grid.min.css"
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../layouts/layout"
 import SEO from "../components/seo"
 
 

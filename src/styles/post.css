@@ -1,0 +1,105 @@
+article {
+    max-width: 700px;
+    margin: 100px auto;
+    color: #222;
+    font-size: 20px;
+    line-height: 1.8;    
+}
+
+article .header {
+    margin-bottom: 30px;
+}
+
+article img {
+    max-width: 100%;
+    margin: 40px 0 0;
+}
+
+article a {
+    color: #164bc5;
+}
+
+article a:hover,
+article a:active {
+    text-decoration: underline;
+}
+
+article h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+article .date {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+article .footer {
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+article .opensource {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+article .tags {
+    margin-bottom: 40px;
+}
+
+article .tags label {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+article .tags span {
+    padding: 9px 20px;
+    margin: 0 5px;
+    border: 1px solid #eaeaea;
+    border-radius: 3px; 
+    display: inline-block;
+}
+
+article .author {
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+}
+
+article .avatar {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+article .description {
+    padding-left: 40px;
+    width: auto;
+}
+
+article .author .name {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+article .author .text {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+

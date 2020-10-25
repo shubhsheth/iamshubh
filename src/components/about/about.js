@@ -9,20 +9,22 @@ const About = () => {
 
     useEffect(() => {
 
-        document.addEventListener('scroll', function () {
-            //get scroll value 
-            let height = window.scrollY;
-
-            //calculate the amount of effect to apply
-            let translate1 = `translateY(${height / 4}px)`;
-            let translate2 = `translateY(-${height / 4}px)`;
-
-            //apply the effect
-            document.querySelector('.parallax_about-one').style.transform = translate1;
-            document.querySelector('.parallax_about-two').style.transform = translate2;
-
-
-        });
+        if (document.querySelector('.parallax_about-one')) {            
+            document.addEventListener('scroll', function () {
+                //get scroll value 
+                let height = window.scrollY;
+    
+                //calculate the amount of effect to apply
+                let translate1 = `translateY(${height / 4}px)`;
+                let translate2 = `translateY(-${height / 4}px)`;
+    
+                //apply the effect
+                document.querySelector('.parallax_about-one').style.transform = translate1;
+                document.querySelector('.parallax_about-two').style.transform = translate2;
+    
+    
+            });
+        }
 
     }, []);
 
