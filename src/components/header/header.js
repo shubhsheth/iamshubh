@@ -16,14 +16,19 @@ const Header = ({ siteTitle }) => {
         });
     });
 
+    const navClickHandler = (e) => {
+        e.preventDefault();
+        setToggled(!isToggled);
+    }
+
     return (
         <>
             <header className="header">
                 <div className="header-inner">
                     <Link to="/"><h1>{siteTitle}</h1></Link>
-                    <a href="javascript:void(0)"
+                    <a href={void(0)}
                         className={isToggled ? 'active icon' : 'icon'}
-                        onClick={() => setToggled(!isToggled)} >
+                        onClick={navClickHandler} >
                         <div className="hamburger"></div>
                     </a>
                 </div>

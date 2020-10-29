@@ -198,3 +198,19 @@
 .alm-btn-wrap {
     text-align: center;
 }
+
+@media (max-width: 991px) {
+    .blog-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-item-content {
+        padding: 180px 15px 30px;
+    }
+}

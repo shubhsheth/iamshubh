@@ -6,6 +6,7 @@
  */
 
 import React from "react"
+import Helmet from "react-helmet"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -26,6 +27,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Helmet>
+        <link rel="icon" href="/favicon.png" />
+      </Helmet>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <main>{children}</main>
       <Footer />

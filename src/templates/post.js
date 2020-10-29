@@ -22,7 +22,7 @@ const Template = ({ data }) => {
 
     return (
         <Layout>
-            <SEO title={post.frontmatter.title} />
+            <SEO title={post.frontmatter.title} description={post.frontmatter.description} />
             <Container>
                 <article>
                     <div className="header">
@@ -62,6 +62,7 @@ export const postQuery = graphql`
             frontmatter {
                 path
                 title
+                description
                 image
                 date
                 tags

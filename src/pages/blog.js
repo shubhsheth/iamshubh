@@ -43,7 +43,7 @@ const Blog = () => {
 
     return (
         <Layout>
-            <SEO title="Page two" />
+            <SEO title="Blog" />
             <section className="blog-items">
                 <Container>
                     <div className="blog-grid">
