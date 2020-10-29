@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+
+:root {
+	--deckgo-highlight-code-carbon-box-shadow: none;
+	--deckgo-highlight-code-font-size: 16px;
+	--deckgo-highlight-code-carbon-header-padding: 0;
+	--deckgo-highlight-code-carbon-toolbar-display: none;
+	--deckgo-highlight-code-margin: 16px 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font: 400 16px/1.5 "Open Sans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #fff;
+
+	padding: 0;
+	margin: 0;
+}
+
+section {
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:active,
+a:hover {
+	text-decoration: none;
+	/* color: #fff; */
+}
