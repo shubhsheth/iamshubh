@@ -74,6 +74,11 @@
         perspective: 130px;
     }
 }
+@media (max-width: 767px) {
+    .carousel_controls {
+        display: none;
+    }
+}
 
 
 /*Carousel Slide*/
