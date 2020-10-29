@@ -10,7 +10,6 @@ footer ul {
 .footer-nav-list,
 .footer-nav-icons {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     padding-left: 0;
 }
@@ -49,5 +48,9 @@ footer ul {
 @media(max-width: 768px){
     .footer_nav_list{
         padding: 0;
+    }
+
+    .footer-nav-list a {
+        margin: 0 7px;
     }
 }
