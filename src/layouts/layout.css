@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 
-
 :root {
 	--primary-color: #252D40;
 	--secondary-color: #13BDED;
 	--body-color: #333333;
 	--light-body-color: #BBBBBB;
 	--background-color: #F8F8F8;
+	--white-color: #FFFFFF;
 
 	--deckgo-highlight-code-carbon-box-shadow: none;
 	--deckgo-highlight-code-font-size: 16px;
@@ -19,9 +19,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+/** BASE STYLES **/
 body {
 	font: 400 20px/1.8 "Open Sans", sans-serif;
-	color: #333;
+	color: var(--body-color);
 	margin: 0;
 }
 
@@ -50,6 +51,7 @@ section {
 }
 
 a {
+	display: inline-block;
 	color: #333;
 	text-decoration: none;
 }
@@ -59,14 +61,18 @@ a:hover {
 	text-decoration: none;
 }
 
+
+/** LAYOUT STYLES **/
 .container {
 	max-width: 1400px;
 	margin: 0 auto;
 }
 
+
+/** SECTION STYLES **/
 .section-heading {
 	padding-bottom: 15px;
-	margin-bottom: 58px;
+	margin-bottom: 60px;
 	position: relative;
 }
 
