@@ -12,7 +12,6 @@
 	display: grid;
 	row-gap: 40px;
 	justify-content: center;
-	margin-right: 100px;
 }
 
 .badge {
@@ -25,11 +24,11 @@
 
 .badge:nth-child(1),
 .badge:nth-child(3) {
-	margin-right: 120px;
+	margin-right: 100px;
 }
 
 .badge:nth-child(2) {
-	margin-left: 120px;
+	margin-left: 100px;
 }
 
 .badge .icon {
