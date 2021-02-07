@@ -44,37 +44,35 @@ const Blog = () => {
     return (
         <Layout>
             <SEO title="Blog" />
-            <section className="blog-items">
-                <Container>
-                    <div className="blog-grid">
+            <section className="latest-posts">
+                <div className="container">
+                    <h2 className="section-heading">Blog Posts</h2>
+                    <div className="posts">
                         {data.allMarkdownRemark.edges.map((item, i) =>
-                            <Link key={i} to={item.node.frontmatter.path} className="blog-item" 
+                            <Link key={i} to={item.node.frontmatter.path} className="post" 
                                 target={ (item.node.frontmatter.source === "external") ? "_blank" : "self" } >
-                                    
-                                <img src={item.node.frontmatter.image} alt={item.node.frontmatter.title} />
-                                <div className="blog-item-content">
+                                <h3>{item.node.frontmatter.title}</h3>
+                                <div className="metas">
+                                    <div className="meta">{formatDate(item.node.frontmatter.date)}</div>
+                                    <div className="meta">{item.node.frontmatter.category}</div>
                                     { (item.node.frontmatter.source === "external") ? 
-                                        <div className="blog-item-flags"> 
-                                            <div className="blog-item-flag flag-external">External</div>
-                                        </div>
+                                    <div className="meta">External</div>
                                     : ''}
-                                    <h2>{item.node.frontmatter.title}</h2>
-                                    <div className="blog-item-exerpt">
-                                        {item.node.frontmatter.description}
-                                    </div>
-                                    <div className="blog-item-meta">
-                                        <div className="blog-item-date">
-                                            {formatDate(item.node.frontmatter.date)}
-                                        </div>
-                                        <div className="blog-item-category">
-                                            {item.node.frontmatter.category}
-                                        </div>
-                                    </div>
                                 </div>
+                                <p className="excerpt">
+                                    {item.node.frontmatter.description}
+                                </p>
+                                <div className="read-more" to="/">Read More</div>
                             </Link>
                         )}
                     </div>
-                </Container>
+                    <div className="categories">
+                        <Link className="category" to="/">Design</Link>
+                        <Link className="category" to="/">Web Development</Link>
+                        <Link className="category" to="/">CSS</Link>
+                        <Link className="category" to="/">Javascript</Link>
+                    </div>
+                </div>
             </section>
         </Layout>
     )
