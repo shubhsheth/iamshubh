@@ -76,11 +76,43 @@ input::placeholder {
 	color: var(--light-body-color);
 }
 
+@media (max-width: 1199px) {
+	h1 {
+		font-size: 55px;
+	}
+
+	h2 {
+		font-size: 48px;
+	}
+}
+
+@media (max-width: 767px) {
+	h1 {
+		font-size: 45px;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+}
+
 
 /** LAYOUT STYLES **/
 .container {
 	max-width: 1400px;
 	margin: 0 auto;
+}
+
+@media (max-width: 1460px) {
+	.container {
+		max-width: unset;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 }
 
 
