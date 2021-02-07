@@ -43,6 +43,7 @@ h2 {
 h3 {
 	font-size: 30px;
 	font-weight: 600;
+	margin: 0;
 }
 
 section {
@@ -52,13 +53,27 @@ section {
 
 a {
 	display: inline-block;
-	color: #333;
 	text-decoration: none;
+	color: var(--body-color);
 }
 
 a:active,
 a:hover {
 	text-decoration: none;
+}
+
+input {
+	background: var(--white-color);
+	padding: 12px 18px;
+	border-radius: 10px;
+	color: var(--body-color);
+	border: 0px;
+	font: 400 18px/1.8 "Open Sans", sans-serif;
+	outline: none !important;
+}
+
+input::placeholder {
+	color: var(--light-body-color);
 }
 
 
