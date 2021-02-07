@@ -2,4 +2,74 @@ footer{
     background: var(--background-color);
     padding: 180px 0 100px;
     clip-path: url(#wave);
+    font-size: 18px;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    justify-content: space-between;
+}
+
+footer .newsletter-form {
+    margin-top: 30px;
+}
+
+footer .fields {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+footer input {
+    width: 300px;
+}
+
+footer .btn-subscribe {
+    background: linear-gradient(84.33deg, var(--secondary-color) 15%, var(--white-color) 190%);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--white-color);
+    padding: 8px 25px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+footer .btn-subscribe:hover {
+    background: linear-gradient(84.33deg, var(--secondary-color) 5%, var(--white-color) 180%);
+}
+
+footer .menu {
+    justify-self: flex-end;
+}
+
+footer .menu-links {
+    display: flex;
+    gap: 80px;
+}
+
+footer .links {
+    margin-bottom: 40px;
+}
+
+footer .link-header {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+footer .link {
+    display: block;
+}
+
+footer .link:hover {
+    text-decoration: underline;
+}
+
+footer .link-spacer {
+    height: 32px;
+}
+
+footer .copyright {
+    color: var(--light-body-color);
 }
