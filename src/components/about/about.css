@@ -12,6 +12,7 @@
 	display: grid;
 	row-gap: 40px;
 	justify-content: center;
+	align-content: center;
 }
 
 .badge {
@@ -55,4 +56,77 @@
 	font-weight: 600;
 	width: 300px;
 	text-align: center;
+}
+
+@media (max-width: 1460px) {
+	.about .container {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 1399px) {
+	.badge {
+		height: 70px;
+		border-radius: 35px;
+	}
+
+	.badge:nth-child(1),
+	.badge:nth-child(3) {
+		margin-right: 75px;
+	}
+
+	.badge:nth-child(2) {
+		margin-left: 75px;
+	}
+
+	.badge .icon {
+		width: 70px;
+		height: 70px;
+		border-width: 6px;
+	}
+
+	.badge .title {
+		font-size: 24px;
+		width: 250px;
+	}
+}
+
+@media (max-width: 991px) {
+	.about {
+		padding: 100px 0;
+	}
+
+	.badge:nth-child(1),
+	.badge:nth-child(3) {
+		margin-right: 25px;
+	}
+
+	.badge:nth-child(2) {
+		margin-left: 25px;
+	}
+}
+
+@media (max-width: 767px) {
+	.about {
+		padding: 50px 0;
+	}
+
+	.about .container {
+		grid-template-columns: 1fr;
+		gap: 50px;
+	}
+
+	.badge:nth-child(1),
+	.badge:nth-child(3) {
+		margin-right: 30px;
+	}
+
+	.badge:nth-child(2) {
+		margin-left: 30px;
+	}
+
+	.badge .title {
+		font-size: 20px;
+		width: 200px;
+	}
 }

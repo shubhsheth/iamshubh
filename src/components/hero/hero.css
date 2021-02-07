@@ -11,6 +11,10 @@
     padding: 100px 175px;
     text-align: center;
     grid-area: profile;
+    background-image: url('/images/profile-bg.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .profile .profile-image {
@@ -97,4 +101,44 @@
 .page-links a:hover:before {
     opacity: 1;
     height: 30px;
+}
+
+@media (max-width: 1460px) {
+    .hero {
+        padding: 150px 30px 50px;
+    }
+
+    .social-links {
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        grid-template-areas: "profile"
+                             "social";
+        grid-template-columns: 1fr;
+        padding: 100px 30px 100px;
+    }
+
+    .profile {
+        padding: 0;
+        margin-bottom: 65px;
+        background-size: 100%;
+    }
+
+    .profile .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 0;
+    }
+
+    .page-links {
+        display: none;
+    }
 }

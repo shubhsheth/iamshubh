@@ -1,8 +1,14 @@
-footer{
+footer {
     background: var(--background-color);
-    padding: 180px 0 100px;
-    clip-path: url(#wave);
+    padding: 100px 0;
     font-size: 18px;
+    position: relative;
+}
+
+.footer-wave {
+    height: 80px;
+    background: var(--background-color);
+    clip-path: url(#wave)
 }
 
 footer .container {
@@ -23,7 +29,8 @@ footer .fields {
 }
 
 footer input {
-    width: 300px;
+    width: 40%;
+    max-width: 300px;
 }
 
 footer .btn-subscribe {
@@ -72,4 +79,38 @@ footer .link-spacer {
 
 footer .copyright {
     color: var(--light-body-color);
+}
+
+@media (max-width: 991px) {
+    footer .fields {
+        flex-direction: column;
+    }
+
+    footer input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    footer {
+        padding: 50px 0;
+    }
+
+    .footer-wave {
+        clip-path: url(#wave-mobile);
+    }
+
+    footer .container {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+    footer input {
+        width: auto;
+        max-width: unset;
+    }
+
+    footer .menu {
+        justify-self: flex-start;
+    }
 }
