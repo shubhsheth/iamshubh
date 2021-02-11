@@ -13,6 +13,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
 import "./layout.css"
+import "../styles/fontawesome-all.min.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,7 +31,7 @@ const Layout = ({ children }) => {
       <Helmet>
         <link rel="icon" href="/favicon.png" />
       </Helmet>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      {(window.location.pathname != "/") ? (<Header siteTitle={data.site.siteMetadata?.title || `Title`} data-path={window.location.href} />) : ''}
       <main>{children}</main>
       <Footer />
     </>

@@ -41,11 +41,11 @@ const Template = ({ data }) => {
                                 <span key={i}>{item}</span>
                             )}
                         </div>
-                        <div className="author">
-                            <img src="/images/me2.jpg" className="avatar" alt="Shubh Sheth" />
+                        <div className="author">                    
+        					<img src="/images/shubh.jpg" className="avatar" alt="Shubh Sheth - Web Developer"/>
                             <div className="description">
                                 <div className="name">Shubh Sheth</div>
-                                <div className="text">Web Developer @ Regex SEO. CS Student @ UH. I blog about web development, design, and <Link to="/blog">more topics</Link>.</div>
+                                <div className="text">Web Developer</div>
                             </div>
                         </div>
                     </div>

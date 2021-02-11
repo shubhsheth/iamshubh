@@ -1,56 +1,116 @@
-footer{
-    background: #181818;
-    padding: 70px 0 30px;
+footer {
+    background: var(--background-color);
+    padding: 100px 0;
+    font-size: 18px;
+    position: relative;
 }
 
-footer ul {
-    list-style:none;
+.footer-wave {
+    height: 80px;
+    background: var(--background-color);
+    clip-path: url(#wave)
 }
 
-.footer-nav-list,
-.footer-nav-icons {
+footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    justify-content: space-between;
+}
+
+footer .newsletter-form {
+    margin-top: 30px;
+}
+
+footer .fields {
     display: flex;
-    justify-content: center;
-    padding-left: 0;
+    gap: 30px;
+    margin-bottom: 35px;
 }
 
-.footer-nav-list {
-    margin-bottom: 50px;
+footer input {
+    width: 40%;
+    max-width: 300px;
 }
 
-.footer-nav-list a {
-    display: inline-block;
-    color: #999;
-    font-size: 1.1rem;
-    margin: 0 25px;
+footer .btn-subscribe {
+    background: linear-gradient(84.33deg, var(--secondary-color) 15%, var(--white-color) 190%);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--white-color);
+    padding: 8px 25px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
-.footer-nav-list a:hover {
+footer .btn-subscribe:hover {
+    background: linear-gradient(84.33deg, var(--secondary-color) 5%, var(--white-color) 180%);
+}
+
+footer .menu {
+    justify-self: flex-end;
+}
+
+footer .menu-links {
+    display: flex;
+    gap: 80px;
+}
+
+footer .links {
+    margin-bottom: 40px;
+}
+
+footer .link-header {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+footer .link {
+    display: block;
+}
+
+footer .link:hover {
     text-decoration: underline;
 }
 
-.footer-nav-icons a {
-    display: inline-block;
-    margin: 0 5px;
+footer .link-spacer {
+    height: 32px;
 }
 
-.footer-nav-icons img {
-    max-width: 40px;
-    height: auto;
+footer .copyright {
+    color: var(--light-body-color);
 }
 
-.footer-copyright {
-    text-align: center;
-    color: #999;
-    font-size: 0.9rem;
-}
-
-@media(max-width: 768px){
-    .footer_nav_list{
-        padding: 0;
+@media (max-width: 991px) {
+    footer .fields {
+        flex-direction: column;
     }
 
-    .footer-nav-list a {
-        margin: 0 7px;
+    footer input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    footer {
+        padding: 50px 0;
+    }
+
+    .footer-wave {
+        clip-path: url(#wave-mobile);
+    }
+
+    footer .container {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+    footer input {
+        width: auto;
+        max-width: unset;
+    }
+
+    footer .menu {
+        justify-self: flex-start;
     }
 }

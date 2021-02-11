@@ -1,0 +1,129 @@
+.latest-posts {
+    padding: 175px 0;
+}
+
+.latest-posts .container {
+    display: grid;
+    grid-template-areas: "heading heading"
+                         "posts categories";
+    grid-template-columns: 3fr 1.5fr;
+    column-gap: 125px;
+}
+
+.latest-posts .section-heading {
+    grid-area: heading;
+    margin-bottom: 95px;
+}
+
+.latest-posts .posts {
+    grid-area: posts;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.latest-posts .post {
+    width: 100%;
+    background: var(--background-color);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 0px 0px var(--background-color);
+    transition: all 0.3s ease;
+}
+
+.latest-posts .post:hover {
+    box-shadow: 6px 6px 0px 1px var(--secondary-color);
+    transform: translate(-6px, -6px);
+}
+
+.latest-posts .post h3 {
+    margin: 0 0 16px;
+}
+
+.latest-posts .post .metas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.latest-posts .post .excerpt {
+    margin: 0 0 25px;
+}
+
+.latest-posts .post .read-more {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.latest-posts .view-more {
+    padding: 10px 25px;
+    background: var(--background-color);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.latest-posts .view-more:hover {
+    background: var(--secondary-color);
+    color: var(--white-color);
+}
+
+
+.latest-posts .categories {
+    grid-area: categories;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+    gap: 25px;
+}
+
+.latest-posts .category {
+    padding: 10px 25px;
+    background: var(--background-color);
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 0px var(--background-color);
+    transition: all 0.3s ease;
+}
+
+.latest-posts .category:hover {
+    box-shadow: 4px 4px 0px 1px var(--secondary-color);
+    transform: translate(-4px, -4px);
+}
+
+@media (max-width: 1399px) {
+    .latest-posts .container {
+        column-gap: 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .latest-posts {
+        padding: 100px 0;
+    }
+
+    .latest-posts .categories {
+        display: none;
+    }
+    
+    .latest-posts .container {
+        grid-template-areas: "heading"
+                            "posts";
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .latest-posts {
+        padding: 50px 0 100px;
+    }
+
+    .latest-posts .post .excerpt {
+        font-size: 18px;
+    }
+}
