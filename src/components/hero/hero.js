@@ -15,7 +15,7 @@ const Hero = () => {
 				<div className="profile-image">
 					<img src="/images/shubh.jpg" alt="Shubh Sheth - Web Developer"/>
                 </div>
-				<h1>Lorem Ipsum</h1>
+				<h1>Hi! I'm Shubh</h1>
             </div>
 			<div className="social-links">
 				<a href="https://www.linkedin.com/in/sheth-shubh/" target="_blank" rel="nofollow"><i className="fab fa-linkedin-in" /></a>
