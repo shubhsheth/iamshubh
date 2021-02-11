@@ -23,7 +23,7 @@ const Footer = () => {
                     <div className="newsletter">
                         <h3>A front-end blog newsletter</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Get quick-bits about the industry and early access to all upcoming posts
                         </p>
                         <form className="newsletter-form">
                             <div className="fields">
@@ -39,18 +39,18 @@ const Footer = () => {
                                 <div className="link-header">
                                     Links
                                 </div>
-                                <Link className="link" to="/">RSS Feed</Link>
-                                <Link className="link" to="/">Contact</Link>
+                                <a className="link" to="/">RSS Feed</a>
+                                <a className="link" href="mailto:shubhsheth8@gmail.com">Contact</a>
                                 <div className="link-spacer"></div>
-                                <a className="link" href="/">LinkedIn</a>
-                                <a className="link" href="/">GitHub</a>
-                                <a className="link" href="/">Twitter</a>
+                                <a className="link" href="https://www.linkedin.com/in/sheth-shubh/" target="_blank" rel="nofollow">LinkedIn</a>
+                                <a className="link" href="https://github.com/shubhsheth" target="_blank" rel="nofollow">GitHub</a>
+                                <a className="link" href="https://twitter.com/reallybaddev" target="_blank" rel="nofollow">Twitter</a>
                             </div>
                             <div className="links">
                                 <div className="link-header">
                                     Menu
                                 </div>
-                                <Link className="link" to="/">Blog</Link>
+                                <Link className="link" to="/blog/">Blog</Link>
                                 <Link className="link" to="/">Book Corner</Link>
                             </div>
                         </div>

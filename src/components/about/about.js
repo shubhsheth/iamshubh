@@ -14,7 +14,10 @@ const About = () => {
                 <div className="info">
                     <h2 className="section-heading">About Me</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                        Hello, my name is Shubh. I am a student in Computer Science at the University of Houston. I am also a Web Developer at RegexSEO in Houston.
+                    </p>
+                    <p>
+                        I had a passion for technology since I was very young. But, when I was 14 I stumbled upon programming. I have kept learning more and more interesting stuff from then.
                     </p>
                 </div>
                 <div className="badges">

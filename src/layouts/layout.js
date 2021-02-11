@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
       <Helmet>
         <link rel="icon" href="/favicon.png" />
       </Helmet>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      {(window.location.pathname != "/") ? (<Header siteTitle={data.site.siteMetadata?.title || `Title`} data-path={window.location.href} />) : ''}
       <main>{children}</main>
       <Footer />
     </>

@@ -1,41 +1,64 @@
 import React, { useEffect } from "react"
-import {Link} from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import "./posts.css"
 
 
 const LatestPosts = () => {
-
-    useEffect(() => {
-
-    }, []);
+    const data = useStaticQuery(graphql`
+    {
+        allMarkdownRemark(
+            limit: 3
+            sort: {
+              fields: [frontmatter___date]
+              order: DESC
+            }
+          ) {
+            edges {
+                node {
+                    html
+                    id
+                    frontmatter {
+                        image
+                        path
+                        title
+                        date
+                        category
+                        source
+                    }
+                }
+            }
+        }
+    }
+    `)
+    
+    const formatDate = (unformatted) => {
+        const d = new Date(unformatted);
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        return `${months[d.getMonth()]} ${d.getDate() + 1}, ${d.getFullYear()}`;
+    }
 
     return (
         <section className="latest-posts">
             <div className="container">
                 <h2 className="section-heading">Latest Posts</h2>
                 <div className="posts">
-                    <Link className="post" to="/blog/">
-                        <h3>IOS Icons with only one div Tag</h3>
+                    {data.allMarkdownRemark.edges.map((item, i) =>
+                    <Link key={i} to={item.node.frontmatter.path} className="post" 
+                        target={ (item.node.frontmatter.source === "external") ? "_blank" : "self" } >
+                        <h3>{item.node.frontmatter.title}</h3>
                         <div className="metas">
-                            <div className="meta">October 25, 2019</div>
-                            <div className="meta">Web Development</div>
+                            <div className="meta">{formatDate(item.node.frontmatter.date)}</div>
+                            <div className="meta">{item.node.frontmatter.category}</div>
+                            { (item.node.frontmatter.source === "external") ? 
+                            <div className="meta">External</div>
+                            : ''}
                         </div>
                         <p className="excerpt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            {item.node.frontmatter.description}
                         </p>
                         <div className="read-more" to="/">Read More</div>
                     </Link>
-                    <Link className="post" to="/blog/">
-                        <h3>IOS Icons with only one div Tag</h3>
-                        <div className="metas">
-                            <div className="meta">October 25, 2019</div>
-                            <div className="meta">Web Development</div>
-                        </div>
-                        <p className="excerpt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <div className="read-more" to="/">Read More</div>
-                    </Link>
+                    )}
                     <Link className="view-more" to="/blog/">View More</Link>
                 </div>
                 <div className="categories">
