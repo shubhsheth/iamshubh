@@ -9,6 +9,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Location } from "@reach/router"
 
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
@@ -16,7 +17,7 @@ import "./layout.css"
 import "../styles/fontawesome-all.min.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
+	const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
@@ -26,20 +27,24 @@ const Layout = ({ children }) => {
     }
   `)
 
-  return (
-    <>
-      <Helmet>
-        <link rel="icon" href="/favicon.png" />
-      </Helmet>
-      {(window.location.pathname != "/") ? (<Header siteTitle={data.site.siteMetadata?.title || `Title`} data-path={window.location.href} />) : ''}
-      <main>{children}</main>
-      <Footer />
-    </>
-  )
+	return (
+		<>
+			<Helmet>
+				<link rel="icon" href="/favicon.png" />
+			</Helmet>
+			<Location>
+				{({ location }) => {
+					return ((location.pathname !== "/") ? <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> : "")
+				}}
+			</Location>
+			<main>{children}</main>
+			<Footer />
+		</>
+	)
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+	children: PropTypes.node.isRequired,
 }
 
 export default Layout
