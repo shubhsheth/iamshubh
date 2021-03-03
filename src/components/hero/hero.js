@@ -12,6 +12,10 @@ const Hero = () => {
     return (
         <section className="hero">
 			<div className="profile">
+				<div className="animation-wrapper">
+					<div className="wave -one"></div>
+					<div className="wave -two"></div>
+				</div>
 				<div className="profile-image">
 					<img src="/images/shubh.jpg" alt="Shubh Sheth - Web Developer"/>
                 </div>
