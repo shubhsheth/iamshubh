@@ -22,15 +22,15 @@ const About = () => {
                 </div>
                 <div className="badges">
                     <div className="badge">
-                        <div className="title">Web Developer</div>
-                        <div className="icon"><img src="/icons/regex.png"/></div>
+                        <div className="title">IMOC Intern</div>
+                        <div className="icon"><img src="/icons/nasa.png"/></div>
                     </div>
                     <div className="badge">
                         <div className="icon"><img src="/icons/uh.png"/></div>
                         <div className="title">Com-Sci Student</div>
                     </div>
                     <div className="badge">
-                        <div className="title">Webmaster</div>
+                        <div className="title">Vice President</div>
                         <div className="icon"><img src="/icons/cougar.png"/></div>
                     </div>
                 </div>
