@@ -14,7 +14,7 @@ const About = () => {
                 <div className="info">
                     <h2 className="section-heading">About Me</h2>
                     <p>
-                        Hello, my name is Shubh. I am a student in Computer Science at the University of Houston. I am also a Web Developer at RegexSEO in Houston.
+                        Hello, my name is Shubh. I am a student in Computer Science at the University of Houston. I am also an Intern at NASA and before that I was a Web Developer at Regex SEO.
                     </p>
                     <p>
                         I had a passion for technology since I was very young. But, when I was 14 I stumbled upon programming. I have kept learning more and more interesting stuff from then.
