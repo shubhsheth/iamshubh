@@ -39,7 +39,7 @@ const Footer = () => {
                                 <div className="link-header">
                                     Links
                                 </div>
-                                <a className="link" to="/">RSS Feed</a>
+                                <a className="link" to="/rss.xml">RSS Feed</a>
                                 <a className="link" href="mailto:shubhsheth8@gmail.com">Contact</a>
                                 <div className="link-spacer"></div>
                                 <a className="link" href="https://www.linkedin.com/in/sheth-shubh/" target="_blank" rel="nofollow">LinkedIn</a>
