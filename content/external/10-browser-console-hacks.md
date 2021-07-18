@@ -1,6 +1,6 @@
 ---
 title: 10 Browser Console Hacks
-description: ""
+description: "Productivity in the workplace is always a major concern. We try all kinds of things to boost our productivity from..."
 category: "JavaScript"
 tags:
     - "Javascript"

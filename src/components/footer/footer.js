@@ -51,6 +51,7 @@ const Footer = () => {
                                     Menu
                                 </div>
                                 <Link className="link" to="/blog/">Blog</Link>
+                                <a className="link" href="/resume.pdf">Resume</a>
                                 <Link className="link" to="/">Book Corner</Link>
                             </div>
                         </div>

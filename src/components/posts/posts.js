@@ -24,6 +24,7 @@ const LatestPosts = () => {
                         date
                         category
                         source
+                        description
                     }
                 }
             }

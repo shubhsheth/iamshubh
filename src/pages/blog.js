@@ -27,6 +27,7 @@ const Blog = () => {
                         date
                         category
                         source
+                        description
                     }
                 }
             }

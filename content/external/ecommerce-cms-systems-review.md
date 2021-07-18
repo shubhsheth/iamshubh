@@ -1,6 +1,6 @@
 ---
 title: Ecommerce CMS Systems Review
-description: ""
+description: "Want to know which ecommerce platform is the best? So do we! That’s why we asked our developer to review and rate the top three most used platforms."
 category: "Web Development"
 tags:
     - "E-Commerce"

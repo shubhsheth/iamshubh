@@ -27,8 +27,8 @@ const Hero = () => {
 				<a href="https://github.com/shubhsheth" target="_blank" rel="nofollow"><i className="fab fa-github" /></a>
             </div>
 			<div className="page-links">
-				<Link to="/blog">Book&nbsp;Corner</Link>
 				<Link to="/blog">Latest&nbsp;Posts</Link>
+				<a href="/resume.pdf">Resume</a>
             </div>
         </section>
     )
