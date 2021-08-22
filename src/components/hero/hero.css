@@ -18,6 +18,7 @@
     height: 250px;
     position: relative;
     border: 10px solid var(--primary-color);
+    background-color: var(--primary-color);
     border-radius: 50%;
     display: inline-block;
     overflow: hidden;
@@ -41,9 +42,10 @@
     opacity: 0.75;
     top: 0;
     left: 0%;
-    animation: drift 30000ms infinite linear;
+    /* animation: drift 30000ms infinite linear; */
     z-index: -1;
 }
+
 .profile .animation-wrapper svg g:not(:first-child) {
     visibility: hidden;
 }

@@ -1,17 +1,17 @@
 import { Link } from "gatsby"
 import React, { useEffect } from 'react'
 import "./hero.css";
-import * as KUTE from "kute.js";
+// import * as KUTE from "kute.js";
 
 const Hero = () => {
 
 	useEffect(() => {
-		KUTE.default.fromTo(
-			'#blob1',
-			{path: '#blob1'},
-			{path: '#blob2'},
-			{yoyo:true, repeat: 999, duration: 4000}
-		).start();
+		// KUTE.default.fromTo(
+		// 	'#blob1',
+		// 	{path: '#blob1'},
+		// 	{path: '#blob2'},
+		// 	{yoyo:true, repeat: 999, duration: 4000}
+		// ).start();
 	}, []);
 
     return (
