@@ -4,6 +4,8 @@
     grid-template-columns: 40px auto 40px;
     grid-template-areas: "social profile menu";
     justify-content: space-between;
+    position: relative;
+    overflow: visible;
 }
 
 .profile {
@@ -167,3 +169,47 @@
         display: none;
     }
 }
+
+.hero > svg {
+    position: absolute;
+    max-height: 169px;
+    right: 0;
+    left: auto;
+    bottom: -150px;
+    transform-origin: right center;
+}
+
+.hero > svg:nth-of-type(1) {
+    transform: scale(4);
+    animation-delay: 3s;
+}
+
+.hero > svg:nth-of-type(1) path {
+    fill: #E4F4FC;
+}
+
+.hero > svg:nth-of-type(2) {
+    transform: scale(3);
+}
+
+.hero > svg:nth-of-type(2) path {
+    fill: #A9DEF6;
+}
+
+.hero > svg:nth-of-type(3) {
+    transform: scale(2);
+}
+
+.hero > svg:nth-of-type(3) path {
+    fill: #60C8F0;
+}
+
+.hero > svg:nth-of-type(4) {
+    transform: scale(1);
+}
+
+.hero > svg:nth-of-type(4) path {
+    fill: #13BDED;
+}
+
+
