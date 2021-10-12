@@ -4,6 +4,8 @@
     grid-template-columns: 40px auto 40px;
     grid-template-areas: "social profile menu";
     justify-content: space-between;
+    position: relative;
+    overflow: visible;
 }
 
 .profile {
@@ -154,7 +156,8 @@
     }
 
     .profile .animation-wrapper svg {
-        top: -20%
+        top: -20%;
+        max-width: 100%;
     }
 
     .social-links {
