@@ -62,6 +62,35 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        query: `
+        {
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+        }
+        `,
+        resolveSiteUrl: () => "https://iamshubh.com",
+        output: `/sitemap.xml`,
+        resolvePages: ({
+          allSitePage: { nodes: allPages }
+        }) => {
+          return allPages.map(page => {
+            return { ...page }
+          })
+        },
+        serialize: ({ path }) => {
+          return {
+            url: path
+          }
+        },
+        excludes: []
+      },
+    },
+    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
