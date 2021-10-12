@@ -22,7 +22,7 @@ const About = () => {
                 </div>
                 <div className="badges">
                     <div className="badge">
-                        <div className="title">IMOC Intern</div>
+                        <div className="title">SWE Intern</div>
                         <div className="icon"><img src="/icons/nasa.png"/></div>
                     </div>
                     <div className="badge">
