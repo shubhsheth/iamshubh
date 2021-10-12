@@ -1,18 +1,10 @@
 import { Link } from "gatsby"
 import React, { useEffect } from 'react'
 import "./hero.css";
-// import * as KUTE from "kute.js";
+
+import Waves from "../waves/waves.js"
 
 const Hero = () => {
-
-	useEffect(() => {
-		// KUTE.default.fromTo(
-		// 	'#blob1',
-		// 	{path: '#blob1'},
-		// 	{path: '#blob2'},
-		// 	{yoyo:true, repeat: 999, duration: 4000}
-		// ).start();
-	}, []);
 
     return (
         <section className="hero">
@@ -49,6 +41,10 @@ const Hero = () => {
 				<Link to="/blog">Latest&nbsp;Posts</Link>
 				<a href="/resume.pdf" target="_blank" rel="nofollow">Resume</a>
             </div>
+			<Waves />
+			<Waves />
+			<Waves />
+			<Waves />
         </section>
     )
 }

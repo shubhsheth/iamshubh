@@ -1,0 +1,72 @@
+svg.waves {
+    position: absolute;
+    max-height: 169px;
+    right: 0;
+    left: auto;
+    bottom: -150px;
+    transform-origin: right center;
+    z-index: -1;
+}
+
+svg.waves:nth-of-type(1) {
+    transform: scale(4);
+    animation-delay: 3s;
+}
+
+svg.waves:nth-of-type(1) path {
+    fill: #E4F4FC;
+}
+
+svg.waves:nth-of-type(2) {
+    transform: scale(3);
+}
+
+svg.waves:nth-of-type(2) path {
+    fill: #A9DEF6;
+}
+
+svg.waves:nth-of-type(3) {
+    transform: scale(2);
+}
+
+svg.waves:nth-of-type(3) path {
+    fill: #60C8F0;
+}
+
+svg.waves:nth-of-type(4) {
+    transform: scale(1);
+}
+
+svg.waves:nth-of-type(4) path {
+    fill: #13BDED;
+}
+
+@media (max-width: 1024px) {
+    svg.waves:nth-of-type(1) {
+        transform: scale(3)
+    }
+    svg.waves:nth-of-type(2) {
+        transform: scale(2.25)
+    }
+    svg.waves:nth-of-type(3) {
+        transform: scale(1.5)
+    }
+    svg.waves:nth-of-type(4) {
+        transform: scale(0.75)
+    }
+}
+
+@media (max-width: 575px) {
+    svg.waves:nth-of-type(1) {
+        transform: scale(2)
+    }
+    svg.waves:nth-of-type(2) {
+        transform: scale(1.5)
+    }
+    svg.waves:nth-of-type(3) {
+        transform: scale(1)
+    }
+    svg.waves:nth-of-type(4) {
+        transform: scale(0.5)
+    }
+}

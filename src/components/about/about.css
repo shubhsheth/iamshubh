@@ -130,3 +130,13 @@
 		width: 200px;
 	}
 }
+
+@media (max-width: 575px) {
+    .badge {
+		margin: 0 !important;
+	}
+
+	.badge .title {
+		width: 175px;
+	}
+}
