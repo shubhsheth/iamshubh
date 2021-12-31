@@ -39,7 +39,7 @@ const Hero = () => {
             </div>
 			<div className="page-links">
 				<Link to="/blog">Latest&nbsp;Posts</Link>
-				<a href="/resume.pdf" target="_blank" rel="nofollow">Resume</a>
+				<a href="#about">About Me</a>
             </div>
 			<Waves />
 			<Waves />

@@ -9,7 +9,7 @@ const About = () => {
     }, []);
 
     return (
-        <section className="about">
+        <section className="about" id="about">
             <div className="container">
                 <div className="info">
                     <h2 className="section-heading">About Me</h2>
