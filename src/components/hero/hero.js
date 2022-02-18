@@ -28,7 +28,7 @@ const Hero = () => {
 					</svg>
 				</div>
 				<div className="profile-image">
-					<img src="/images/shubh.jpg" alt="Shubh Sheth - Web Developer"/>
+					<img src="/images/shubhnew.jpeg" alt="Shubh Sheth - Web Developer"/>
                 </div>
 				<h1>Hi! I'm Shubh</h1>
             </div>
