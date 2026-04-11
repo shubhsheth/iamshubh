@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { graphql, Link } from "gatsby";
 
 import { Image, Container } from "react-bootstrap";
 
 import Layout from "../layouts/layout";
 import SEO from "../components/seo";
-import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 
 import '../styles/post.css';
 
 const Template = ({ data }) => {
     const post = data.markdownRemark;
+
+    useEffect(() => {
+        import('@deckdeckgo/highlight-code/dist/loader').then(({ defineCustomElements }) => {
+            defineCustomElements();
+        });
+    }, []);
 
     const formatDate = (unformatted) => {
         const d = new Date(unformatted);
@@ -18,7 +23,7 @@ const Template = ({ data }) => {
         return `${months[d.getMonth()]} ${d.getDate() + 1}, ${d.getFullYear()}`;
     }
 
-    deckDeckGoHighlightElement();
+    if (!post) return null;
 
     return (
         <Layout>

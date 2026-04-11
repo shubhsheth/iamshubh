@@ -9,8 +9,7 @@ const LatestPosts = () => {
         allMarkdownRemark(
             limit: 3
             sort: {
-              fields: [frontmatter___date]
-              order: DESC
+              frontmatter: { date: DESC }
             }
           ) {
             edges {

@@ -53,7 +53,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `static/favicon.png`
+        icon: `static/favicon.png`,
       },
     },
     {
@@ -93,7 +93,7 @@ module.exports = {
             query: `
               {
                 allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
+                  sort: { frontmatter: { date: DESC } },
                 ) {
                   edges {
                     node {

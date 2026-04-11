@@ -12,8 +12,7 @@ const Blog = () => {
     {
         allMarkdownRemark(
             sort: {
-              fields: [frontmatter___date]
-              order: DESC
+              frontmatter: { date: DESC }
             }
           ) {
             edges {
