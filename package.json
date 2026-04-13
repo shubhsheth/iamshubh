@@ -24,8 +24,7 @@
     "react": "^18.2.0",
     "react-bootstrap": "^1.3.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-particles-js": "^3.3.0"
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "prettier": "2.1.2"
@@ -35,7 +34,7 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "NODE_OPTIONS=--openssl-legacy-provider gatsby build",
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
